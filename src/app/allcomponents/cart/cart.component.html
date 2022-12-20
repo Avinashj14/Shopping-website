@@ -1,0 +1,21 @@
+
+
+
+<div class="card mb-3" style="max-width: 347px; max-height:150px;" *ngFor="let p of pdata " >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{p.image}}" class="img-fluid rounded-start"  style="height: 142px; width:114.99px;" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{p.name}}</h5>
+          <p class="card-text">₹{{p.amount}}</p>
+          <button class="btn btn-danger" (click)="delete(p.id)" >Remove from Cart </button>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  

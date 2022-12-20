@@ -1,0 +1,24 @@
+
+
+<div *ngIf="this.pdata.length==0; else elseBlock" 
+style="text-align:center;  position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px;width: 100px;height: 100px;">
+<h2>Add products....<br> Your Cart is Empty !!!!</h2></div>
+
+<ng-template #elseBlock>
+<div  class="card mb-3" style="max-width: 347px; max-height:150px;" *ngFor="let p of pdata " >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{p.image}}" class="img-fluid rounded-start"  style="height: 142px; width:114.99px;" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{p.name}}</h5>
+          <p class="card-text">₹{{p.amount}}</p>
+          <button class="btn btn-danger" (click)="delete(p.id)" >Remove from Cart </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>  
+
+  

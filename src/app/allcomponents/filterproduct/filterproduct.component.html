@@ -1,0 +1,33 @@
+
+ <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" style="border:none" aria-current="page" routerLink="/filter/jeans" >Jeans</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="border:none"href="#" routerLink="/filter/shoes">Shoes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"style="border:none" href="#"  routerLink="/filter/shirt">Shirts</a>
+    </li>
+
+  </ul>
+
+
+<div class="col-md-12 mt-4"></div>
+ 
+<div class="container"  >
+<div class="row">
+    <div class="col-md-6  " style="  text-align: center;"  *ngFor="let p of pfilter " >
+<div class="card text-dark bg-light m-4  " style="max-width: 18rem; text-align:center; " >
+    <div class="card-body" >
+      <img src="{{p.image}}" style="height:300px; width:200px"/>
+      <h5 class="card-title">₹{{p.amount}}</h5>
+      <p class="card-text">{{p.productName}}</p>
+      <p class="card-text">{{p.description}} </p>
+    </div>
+    <div class="card-header"><a class="btn btn-warning">Buy</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-info" routerLink="/cart/{{p.id}}" >Add to Cart</a></div>
+  </div>
+</div>
+
+</div>
+</div>
