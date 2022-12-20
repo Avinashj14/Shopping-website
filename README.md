@@ -14,6 +14,23 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+
+## 🚀 Usage
+
+1. Run the data base 
+
+Use the below command to run the data base .
+```bash
+json-server --watch db.json
+```
+2. serve
+
+Use the below command to serve the project.
+```bash
+ng serve
+```
+
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
