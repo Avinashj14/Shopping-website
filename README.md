@@ -1,7 +1,7 @@
 # ECommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
-project include login regiser , add to cart functionally  with api 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.<br>
+project include login regiser , add to cart functionality  with api 
 
 ## Development server
 
